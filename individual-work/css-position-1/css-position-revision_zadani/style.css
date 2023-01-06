@@ -57,14 +57,13 @@ Barva text v oranžovém pozadí: #752400
   display: flex;
 }
 .hero-img {
-  border-left: 20px solid #752400;
-  border-top: 20px solid #752400;
   margin: 50px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 .hero-img img{
+  box-shadow: -10px -10px 10px #752400;
   max-width: 600px;
 }
 .hero-text {
@@ -72,4 +71,22 @@ Barva text v oranžovém pozadí: #752400
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+/*sekce textu zarovnaného v gridu*/
+.text {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+/*sekce se scrollback tlačítkem*/
+.top-link {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;  
+}
+.top-link img {
+  max-width: 50px;
 }
